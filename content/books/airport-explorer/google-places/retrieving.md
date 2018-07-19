@@ -123,9 +123,9 @@ public class IndexModel : PageModel
                 MaxWidth = 400
             });
 
-            if (photosResponse.PhotoBuffer != null)
+            if (photosResponse.Buffer != null)
             {
-                airportDetail.Photo = Convert.ToBase64String(photosResponse.PhotoBuffer);
+                airportDetail.Photo = Convert.ToBase64String(photosResponse.Buffer);
                 airportDetail.PhotoCredit = photoCredit;
             }
         }
